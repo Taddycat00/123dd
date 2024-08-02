@@ -1,0 +1,214 @@
+body {
+    /* 清除邊界（上右下左）=> 順時鐘方向 */
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.text {
+    /* 輔助框線 */
+    /* 線條粗細 線條樣式 線條色彩 */
+    /* border: 1px solid red; */
+    width: 1200px;
+    /* auto: 置中，減去現有物件尺寸/2 */
+    margin-left: auto;
+    margin-right: auto;
+    /* flex: 由堆疊排列改為水平排列 */
+    display: flex;
+    /* padding-top/bottom 上/下增加間隔 */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* space-between: 左右切齊邊界，其餘均分；space-around: 左右留白，其餘均分 */
+    justify-content: space-between;
+}
+
+.textbox {
+    /* border: 1px solid green; */
+    width: 360px;
+    /* background-color: #99e; */
+    /* text-align: center中 left左 right右 justify左右對齊 */
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h2 {
+    color: #be1515;
+    font-size: 32px;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.slogan {
+    background-color: #be1515;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.slogan h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.recommand h2 {
+    font-size: 40px;
+    color: #20a53d;
+    text-align: center;
+}
+
+/* 課程介紹最外層 */
+.classcontent {
+    border: 1px solid red;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    /* 讓三個版面並排 */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 課程介紹內部群組 */
+.classbox {
+    width: 320px;
+    box-shadow: 0 0 10px #000;
+    /* 框縣內側增加留白區 */
+    padding: 20px;
+}
+
+.classbox img {
+    width: 100%;
+}
+
+.classbox h3 {
+    font-size: 30px;
+}
+
+.classbox .p-blue {
+    color: blue;
+}
+
+.classbox p {
+    color: #505050;
+    font-size: 18px;
+}
+
+.classbox p s {
+    font-size: 20px;
+}
+
+.classbox p span {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+}
+
+.classbox .p-center {
+    text-align: center;
+}
+
+.classbox .div-center a {
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    /* 因超連結預設為行內元素:本身沒有寬高，所以將超連結改成區塊元素 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* 四邊圓角 */
+    border-radius: 5px;
+}
+
+/* 當按鈕是連結<a href>時hover的寫法 */
+.classbox .div-center a:hover {
+    background-color: rgb(131, 16, 16);
+}
+
+.classbox button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    /* button預設就有border外框 要取消需下none */
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/* 處理按鈕位置 */
+.classbox .div-center {
+    text-align: center;
+}
+
+/* 碰到按鈕時 */
+.classbox button:hover {
+    /* 變成手掌形狀 */
+    cursor: pointer;
+    /* hover時更改按鈕底色 */
+    background-color: rgb(131, 16, 16);
+}
+.copyright {
+    background-color: #161616;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    display: block;
+}
+/* 中尺寸變化 */
+@media(min-width:640px)and(max-width:1119px){
+  .text{
+    width: 80%;
+  }  
+  .classcontent{
+    width: 80%;
+  }
+  .classbox{
+    width: 80%;
+    margin-right: 10px;
+  }
+}
+/* 響應式尺寸變化，當尺寸小於639px時，內容限制在320px中，且置中 */
+@media(max-width:639px) {
+    #wrap {
+        /* border: 1px solid red; */
+        /* width: 400px; */
+        width: 100%;
+        margin: auto;
+    }
+
+    /* 標題文字區堆疊排列 */
+    .text {
+        display: block;
+        border: 1px solid red;
+        /* 維持flex特性，只是改變方向 */
+        /* flex-direction: column; */
+        width: 80%;
+    }
+
+    .textbox {
+        border: 1px solid red;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* 推薦課程垂直排列 */
+    .classcontent {
+        display: block;
+        width: 90%;
+    }
+
+    .classbox {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}

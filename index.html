@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <!-- 外掛的css在前-->
+    <link href="lightbox2/css/lightbox.css" rel="stylesheet" />
+    <!-- 自己的css在後 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 用div#產生ID 包起body所有要響應式的範圍 -->
+    <div id="wrap">
+        <!-- 建立Banner區塊 -->
+        <!-- class 類別名稱 -->
+        <div class="banner">
+            <!-- 建立圖片img -->
+            <!-- src="圖片來源" title="圖片說明" -->
+            <!-- alt="替代文字"=>圖片找不到時出現 -->
+            <img src="./image/banner.jpg" alt="banner圖" title="課程banner">
+        </div>
+        <!-- 文字區 -->
+        <div class="text">
+            <!-- 標題區一 -->
+            <div class="textbox">
+                <!-- 標題 -->
+                <h2>標題一</h2>
+                <!-- 內容 -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minus itaque labore laborum ex
+                    voluptas
+                    fugiat, consectetur quisquam distinctio non ullam saepe earum nisi! Molestias voluptatum officia
+                    eveniet
+                    sint reiciendis, quam beatae ullam dolorum? Et nobis doloremque ipsam delectus molestiae molestias
+                    recusandae nihil possimus facere qui suscipit, numquam temporibus earum!</p>
+            </div>
+            <div class="textbox">
+                <h2>標題二</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minus itaque labore laborum ex
+                    voluptas
+                    fugiat, consectetur quisquam distinctio non ullam saepe earum nisi! Molestias voluptatum officia
+                    eveniet
+                    sint reiciendis, quam beatae ullam dolorum? Et nobis doloremque ipsam delectus molestiae molestias
+                    recusandae nihil possimus facere qui suscipit, numquam temporibus earum!</p>
+            </div>
+            <div class="textbox">
+                <h2>標題三</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minus itaque labore laborum ex
+                    voluptas
+                    fugiat, consectetur quisquam distinctio non ullam saepe earum nisi! Molestias voluptatum officia
+                    eveniet
+                    sint reiciendis, quam beatae ullam dolorum? Et nobis doloremque ipsam delectus molestiae molestias
+                    recusandae nihil possimus facere qui suscipit, numquam temporibus earum!</p>
+            </div>
+        </div>
+        <div class="slogan">
+            <h2>讓學習成為一種習慣</h2>
+        </div>
+        <div class="recommand">
+            <h2>推薦課程</h2>
+        </div>
+        <div class="classcontent">
+            <div class="classbox">
+                <a href="./image/unity.jpg" data-lightbox="image-1" data-title="Unity"> <img src="./image/unity.jpg"
+                        alt="unity"></a>
+                <h3>Unity 5</h3>
+                <p class="p-blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ipsam distinctio ut,
+                    cum repellat
+                    voluptate!</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:4小時</P>
+                <p class="p-center">
+                    <s>原價:NT$1600</s>
+                    <span>NT$1200</span>
+                </p>
+                <div class="div-center">
+                    <!-- 超連結要設定寬高要刪除<button> 留下超連結後 再加上display:block-->
+                    <a href="#">付款上課去</a>
+                </div>
+            </div>
+            <div class="classbox">
+                <a href="./image/gamesalad.jpg" data-lightbox="image-2" data-title="Gamesalad"> <img
+                        src="./image/gamesalad.jpg" alt="Gamesalad"></a>
+                <h3>Gamesalad</h3>
+                <p class="p-blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ipsam distinctio ut,
+                    cum repellat
+                    voluptate!</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:4小時</P>
+                <p class="p-center">
+                    <s>原價:NT$1600</s>
+                    <span>NT$1200</span>
+                </p>
+                <div class="div-center">
+                    <!--如果按鈕width不是100% 要置中 則使用Button製作會比較方便，如下-->
+                    <button>付款上課去</button>
+                </div>
+            </div>
+            <div class="classbox">
+
+                <a href="./image/gwd.jpg" data-lightbox="image-3" data-title="GWD"> <img src="./image/gwd.jpg"
+                        alt="GWD"></a>
+                <h3>GWD</h3>
+                <p class="p-blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ipsam distinctio ut,
+                    cum repellat
+                    voluptate!</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:4小時</P>
+                <p class="p-center">
+                    <s>原價:NT$1600</s>
+                    <span>NT$1200</span>
+                </p>
+                <div class="div-center">
+                    <!-- 超連結要設定寬高要刪除<button> 留下超連結後 再加上display:block-->
+                    <a href="#">付款上課去</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2020 Changhua County Government. All rights reserved.v26</p>
+        </div>
+    </div>
+    <!-- lightbox js -->
+    <script src="./lightbox2/js/lightbox-plus-jquery.js"></script>
+    <script src="./lightbox2/js/lightbox.js"></script>
+</body>
+
+</html>
